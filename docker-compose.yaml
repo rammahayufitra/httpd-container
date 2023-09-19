@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  lighttpd:
+    image: sebp/lighttpd
+    volumes:
+      -  /home/delameta/Delameta/cctv:/var/www/localhost/htdocs
+    ports:
+      - "3000:80"
+    tty: true
